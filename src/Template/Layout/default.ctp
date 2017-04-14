@@ -46,9 +46,12 @@ use Cake\Core\Configure;
         <div class="section">
             <!--   Icon Section   -->
             <div class="row">
-                <div class="col s12 m12">
+                <div class="col s8 m8">
                     <?php echo $this->Layout->sessionFlash(); ?>
                     <?php echo $this->fetch('content'); ?>
+                </div>
+                <div class="s4 m4">
+                    <?= $this->Regions->blocks('right'); ?>
                 </div>
             </div>
         </div>
